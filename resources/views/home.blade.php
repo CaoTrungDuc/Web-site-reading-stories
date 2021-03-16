@@ -1653,7 +1653,7 @@
                     <div class="logging-fade hidden"></div>
                     <div class="error-tip hidden"></div>
                     <dl>
-                        <input type="hidden" name="_token" value="3rJv3YVMJzzIJ9gy41W5ojiscQ59tfDgkYQQKvsz">
+                        <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                         <dd>
                             <em class="iconfont"></em>
                             <input type="text" name="username" tabindex="1" placeholder="Tài khoản" id="username">
@@ -1670,13 +1670,13 @@
                         <a class="blue-btn go-login btnLogin login-button" href="https://truyen.tangthuvien.vn/fbredirect" onclick="jQuery('.logging-fade').removeClass('hidden');"><i class="fa fa-facebook-official" style="margin-right: 5px;"></i>Đăng nhập bằng Facebook</a>
                     </div>
                 </div>
-                <div class="login-box q-reg yw-login" style="display:none;">
+                <div  class="login-box q-reg yw-login" style="display:none;">
                     <div class="logging-fade hidden"></div>
                     <div class="error-tip hidden"></div>
                     <dl>
                         <dd>
                             <em class="iconfont"></em>
-                            <input type="text" name="username" tabindex="1" placeholder="Tài khoản" id="username">
+                            <input type="text" name="name" tabindex="1" placeholder="Tài khoản" id="name">
                         </dd>
                         <dd>
                             <em class="iconfont"></em>

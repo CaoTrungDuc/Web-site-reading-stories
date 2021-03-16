@@ -27,3 +27,13 @@ Route::get('/nap-xu', function () {return view('napxu');});
 Route::get('/lich-su-nap', function () {return view('lichsunap');});
 Route::get('/shop-vat-pham', function () {return view('shopvatpham');});
 
+//API User
+Route::get('/listUser',[\App\Http\Controllers\UsersController::class,'getListUser']);
+Route::post('/checkLogin',[\App\Http\Controllers\UsersController::class,'checkLogin']);
+Route::post('/register1',[\App\Http\Controllers\UsersController::class,'register']);
+
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
