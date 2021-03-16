@@ -34,23 +34,23 @@
     <div class="box-center cf">
         <div class="nav-list site-nav fl">
             <ul>
-                <li class="site"><a class="pin-logo" href="https://truyen.tangthuvien.vn">Trang chủ</a>
+                <li class="site"><a class="pin-logo" href="/">Trang chủ</a>
                 </li>
-                <li class=""><a href="https://truyen.tangthuvien.vn/the-loai/tien-hiep">Tiên Hiệp</a></li>
-                <li class=""><a href="https://truyen.tangthuvien.vn/the-loai/huyen-huyen">Huyền Huyễn</a></li>
-                <li class=""><a href="https://truyen.tangthuvien.vn/the-loai/do-thi">Đô Thị</a></li>
-                <li class=""><a href="https://truyen.tangthuvien.vn/the-loai/khoa-huyen">Khoa Huyễn</a></li>
-                <li class=""><a href="https://truyen.tangthuvien.vn/the-loai/ky-huyen">Kỳ Huyễn</a></li>
-                <li class=""><a href="https://truyen.tangthuvien.vn/the-loai/vo-hiep">Võ Hiệp</a></li>
+                <li class=""><a href="/the-loai/tien-hiep">Tiên Hiệp</a></li>
+                <li class=""><a href="/the-loai/huyen-huyen">Huyền Huyễn</a></li>
+                <li class=""><a href="/the-loai/do-thi">Đô Thị</a></li>
+                <li class=""><a href="/the-loai/khoa-huyen">Khoa Huyễn</a></li>
+                <li class=""><a href="/the-loai/ky-huyen">Kỳ Huyễn</a></li>
+                <li class=""><a href="/the-loai/vo-hiep">Võ Hiệp</a></li>
                 <li class="more">
                     <a href="javascript:" id="top-nav-more" onclick="jQuery('.dropdown').toggle()" target="" data-eid="qd_A54">Khác<span></span></a>
                     <div class="dropdown">
-                        <a href="https://truyen.tangthuvien.vn/the-loai/lich-su">Lịch Sử</a>
-                        <a href="https://truyen.tangthuvien.vn/the-loai/dong-nhan">Đồng Nhân</a>
-                        <a href="https://truyen.tangthuvien.vn/the-loai/quan-su">Quân Sự</a>
-                        <a href="https://truyen.tangthuvien.vn/the-loai/du-hi">Du Hí</a>
-                        <a href="https://truyen.tangthuvien.vn/the-loai/canh-ky">Cạnh Kỹ</a>
-                        <a href="https://truyen.tangthuvien.vn/the-loai/linh-di">Linh Dị</a>
+                        <a href="/the-loai/lich-su">Lịch Sử</a>
+                        <a href="/the-loai/dong-nhan">Đồng Nhân</a>
+                        <a href="/the-loai/quan-su">Quân Sự</a>
+                        <a href="/the-loai/du-hi">Du Hí</a>
+                        <a href="the-loai/canh-ky">Cạnh Kỹ</a>
+                        <a href="/the-loai/linh-di">Linh Dị</a>
                     </div>
                 </li>
             </ul>
@@ -67,8 +67,8 @@
                 </li>
                 <li class="line"></li>
                 <li class="book-shelf" id="top-book-shelf">
-                    <a href="https://truyen.tangthuvien.vn/account"><em class="iconfont"></em><i>lyt996</i></a>
-                    <a href="https://truyen.tangthuvien.vn/logout" onclick="return confirm('Bạn muốn đăng xuất tài khoản?');" title="Đăng xuất" id="logout-header">
+                    <a href="/account"><em class="iconfont"></em><i>lyt996</i></a>
+                    <a href="/logout" onclick="return confirm('Bạn muốn đăng xuất tài khoản?');" title="Đăng xuất" id="logout-header">
                         <img src="https://truyen.tangthuvien.vn/images/app/logout.png" width="20px" height="20px">
                     </a>
                 </li>
@@ -226,8 +226,6 @@
                     <a href="/shop-vat-pham" class="sideBar-list-a" data-eid="qd_M14"><i class="iconfont fa fa-shopping-basket" aria-hidden="true"></i><font><font>Shop vật phẩm</font></font></a>
                 </li>
             </ul>
-
-
         </div>
         <div>
             @yield('content')
@@ -239,7 +237,7 @@
         <div class="container">
             <div class="col-md-3"><img src="https://truyen.tangthuvien.vn/images/logo-web-gray.png" height="60"></div>
             <div class="footer-right col-md-9">
-                © 2016 Tàng Thư Viện Inc.<br>
+                © 2021 Bạch Tiểu Thuần Inc.<br>
                 Tàng Thư Viện là sân chơi mở và free cho cộng đồng fan kiếm hiệp, tiên hiệp, ngôn tình.
                 Chúc các bạn có những giây phút thư giãn thoải mái sau giờ làm việc và học tập căng thẳng.
             </div>
@@ -270,7 +268,6 @@
         <a id="_aOnOffAdv" target="_blank" rel="nofollow" href="https://plus.google.com/share?url=https://truyen.tangthuvien.vn/account" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
         <div id="_divOnOffAdv" class="myTip trans" style="font-size: 12px !important; display: none;">Chia sẻ Google+</div>
     </div>
-
 </div>
 <script type="text/javascript">
     $jq = jQuery.noConflict();
@@ -286,6 +283,4 @@
         }
     });
 </script>
-
-
 <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-2" tabindex="0" style="display: none;"></ul></body></html>
