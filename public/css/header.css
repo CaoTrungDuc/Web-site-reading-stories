@@ -1,0 +1,491 @@
+@font-face {
+    font-family: qd_iconfont;
+    src: url(../fonts/qd_iconfont.51f86.eot);
+    src: url(../fonts/qd_iconfont.51f86.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/qd_iconfont.f9a3f.woff) format('woff'),
+    url(../fonts/qd_iconfont.0a60d.ttf) format('truetype'),
+    url(../fonts/qd_iconfont.8a95f.svg#iconfont) format('svg')
+}
+body{
+    background: #fff;
+}
+.pin-nav-wrap *,.logo-wrap *{
+    box-sizing: content-box;
+}
+.pin-nav-wrap .iconfont ,.logo-wrap .iconfont{
+    font-family: qd_iconfont !important;
+    font-size: 24px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .1px;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+.pin-nav-wrap.need-search .min-user li:first-child {
+    display: block
+}
+
+.pin-nav-wrap.need-search .min-user li:first-child + li.line {
+    display: block
+}
+
+.box-center {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.fl{
+    float: left;
+}
+.fr{float: right;}
+.pin-nav-wrap {
+
+    width: 100%;
+    height: 42px;
+    transition: .5s all;
+    transform: translateZ(10px);
+    background: #3e3d43;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+    position: relative;
+    z-index: 99;
+}
+
+.pin-nav-wrap.show {
+    top: 0
+}
+
+.pin-nav-wrap .nav-list {
+    height: 42px;
+    margin-left: -10px
+}
+
+.pin-nav-wrap .nav-list li {
+    float: left
+}
+
+.pin-nav-wrap .nav-list li.act a {
+    line-height: 38px;
+    height: 40px;
+    transition: none;
+    border-top: 2px solid #ed4259;
+    background: #2b2a2e
+}
+
+.pin-nav-wrap .nav-list li.act a span {
+    top: 17px;
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg)
+}
+
+.pin-nav-wrap .nav-list li.act .dropdown {
+    display: block;
+    animation: .15s ease-out;
+    animation-name: fadeinT;
+    background: #2b2a2e
+}
+
+.pin-nav-wrap .nav-list li.site {
+    width: 95px;
+    margin-right: 28px
+}
+
+.pin-nav-wrap .nav-list li.site a {
+    width: 95px;
+    color: #fff
+}
+
+.pin-nav-wrap .nav-list li.site a.pin-logo {
+    display: block;
+    width: 95px;
+    height: 42px;
+    /*background-image: url(/qd/images/pin_logo_1x.6068b.png);*/
+    background-repeat: no-repeat;
+    background-position: 10px 48%
+}
+
+.pin-nav-wrap .nav-list li.site .dropdown {
+    width: 125px
+}
+
+.pin-nav-wrap .nav-list li.site.act a {
+    height: 38px
+}
+
+.pin-nav-wrap .nav-list li a {
+    font: 14px/42px Arial;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 42px;
+    padding: 0 15px;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.pin-nav-wrap .nav-list li a:hover {
+    color: #fff
+}
+
+.pin-nav-wrap .nav-list li a span {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    transition: all .2s;
+    border-top: 4px solid #ccc;
+    border-right: 4px solid transparent;
+    border-bottom: 0 none;
+    border-left: 4px solid transparent
+}
+
+.pin-nav-wrap .nav-list li .dropdown {
+    position: relative;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    z-index: 101;
+    width: 110px;
+    background: #3e3d42;
+}
+
+.pin-nav-wrap .nav-list li .dropdown a {
+    font: 14px/38px Arial, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    height: auto;
+    padding: 2px 15px;
+    color: #ccc;
+    border-top: none
+}
+
+.pin-nav-wrap .nav-list li .dropdown a:hover {
+    color: #fff;
+    background: #000
+}
+
+.pin-nav-wrap .nav-list li.more a {
+    width: 46px
+}
+
+.pin-nav-wrap .nav-list li.more a span {
+    right: 15px
+}
+
+.pin-nav-wrap .nav-list li.more .dropdown a {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.pin-nav-wrap .min-user .iconfont {
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff
+}
+
+.pin-nav-wrap .min-user .iconfont:hover {
+    background: 0 0
+}
+
+.pin-nav-wrap .min-user li {
+    position: relative;
+    z-index: 11
+}
+
+.pin-nav-wrap .min-user li:first-child {
+    display: none
+}
+
+.pin-nav-wrap .min-user li:first-child + li.line {
+    display: none
+}
+
+.pin-nav-wrap .min-user li .pin-input {
+    font-family: Arial, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 42px;
+    width: 150px;
+    height: 26px;
+    transition: color .3s, border .3s;
+    opacity: 1;
+    color: #e6e6e6;
+    color: rgba(255, 255, 255, .7);
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #aaa;
+    background: #3e3d43;
+    outline: none;
+}
+
+.pin-nav-wrap .min-user li .pin-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #3e3d43 inset;
+    -webkit-text-fill-color: #e6e6e6;
+    -webkit-text-fill-color: rgba(255, 255, 255, .7)
+}
+.pin-nav-wrap .submit-input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+.pin-nav-wrap .min-user li .pin-input:focus {
+    color: #fff;
+    border-bottom: 2px solid #fff
+}
+
+.pin-nav-wrap .min-user li.book-shelf a:hover {
+    background: #2b2a2e
+}
+
+.pin-nav-wrap .min-user li.book-shelf i {
+    margin-left: 5px
+}
+
+.pin-nav-wrap .min-user li.book-shelf cite {
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 1.4;
+    display: inline-block;
+    margin: -2px 0 0 4px;
+    padding: 0 4px;
+    vertical-align: middle;
+    color: #fff;
+    border-radius: 4px;
+    background: #ed4259
+}
+
+.pin-nav-wrap .min-user li.book-shelf cite strong {
+    font-weight: 400
+}
+
+.pin-nav-wrap .min-user li.book-shelf em {
+    margin-top: -2px
+}
+
+.pin-nav-wrap .min-user li a {
+    position: relative;
+    z-index: 10;
+    margin-right: 0;
+    color: #fff;
+    float:left;
+    padding: 0 10px;
+}
+.pin-nav-wrap .min-user li.book-shelf a i em {
+    color: #fff;
+    border: 1px solid #bf2e1e;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: #d63f2e;
+    border-radius: 5px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    text-align: center;
+    -webkit-font-smoothing: auto;
+    font-smoothing: auto;
+    font-size: 12px;
+}
+.pin-nav-wrap .min-user li label#pin-search {
+    line-height: 42px;
+    display: block;
+    height: 42px;
+    margin-right: 10px
+}
+
+.pin-nav-wrap .min-user li.line {
+    height: 24px;
+    margin: 10px 0 0;
+    border-right: 1px solid #515056
+}
+
+.pin-nav-wrap .min-user li.sign-out {
+    position: relative;
+    padding: 0 6px 0 15px
+}
+
+.pin-nav-wrap .min-user li.sign-out a {
+    display: inline;
+    margin-right: 8px;
+    padding: 0;
+    color: #ccc
+}
+
+.pin-nav-wrap .min-user li.sign-out a:hover {
+    color: #fff
+}
+
+.pin-nav-wrap .min-user li.sign-in a {
+    overflow: hidden;
+    min-width: 80px;
+    max-width: 156px;
+    padding: 0 20px 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.pin-nav-wrap .min-user li.sign-in a i {
+    padding-right: 5px
+}
+
+.pin-nav-wrap .min-user li.sign-in .dropdown {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 100%
+}
+
+.pin-nav-wrap .min-user li.sign-in .dropdown a {
+    text-align: left
+}
+
+.pin-nav-wrap .min-user li.sign-in .dropdown a.pin-user-name {
+    overflow: hidden;
+    height: 32px
+}
+
+.pin-nav-wrap .min-user li.sign-in .dropdown a i {
+    padding-right: 0
+}
+.channel-header.xuanhuan{
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% -20px;
+}
+.logo-wrap .logo {
+    width: 219px;
+    height: 52px;
+    margin: 16px 184px 0 0
+}
+
+.logo-wrap .logo a {
+    display: block;
+    width: 219px;
+    height: 52px;
+    background: url(../images/logo-web.png) no-repeat;
+    background-size: 100%;
+}
+
+.logo-wrap .book-shelf, .logo-wrap .search-wrap {
+    margin-top: 30px;
+    position: relative;
+}
+.ui-autocomplete {
+    z-index: 10000;
+}
+
+.ui-autocomplete li {
+    padding: 5px 0 !important;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ui-menu .ui-menu-item a {
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px !important;
+}
+
+.ui-menu .ui-menu-item a.ui-state-focus {
+    border: 0;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.logo-wrap .book-shelf p, .logo-wrap .search-wrap p {
+    float: left;
+    overflow: hidden;
+    width: 348px;
+    height: 38px;
+    border: 1px solid #dbdbdb;
+    border-right: none
+}
+
+.logo-wrap .book-shelf p:hover, .logo-wrap .search-wrap p:hover {
+    border-color: #c9c9c9
+}
+
+.logo-wrap .book-shelf .search-box, .logo-wrap .search-wrap .search-box {
+    font: 14px/38px Arial, '-apple-system', Simsun;
+    width: 326px;
+    height: 38px;
+    padding: 0 11px;
+    border: none;
+    outline: none;
+}
+
+
+
+.logo-wrap .book-shelf .search-btn, .logo-wrap .search-wrap .search-btn {
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #3e98a1;
+}
+
+.logo-wrap .book-shelf .search-btn:hover, .logo-wrap .search-wrap .search-btn:hover {
+    background-color: #ed4259
+}
+
+.logo-wrap .book-shelf .search-btn em, .logo-wrap .search-wrap .search-btn em {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    color: #fff
+}
+
+.logo-wrap .book-shelf {
+    overflow: hidden;
+    width: 120px;
+    height: 40px;
+    background: #fff
+}
+
+.logo-wrap .book-shelf a, .logo-wrap .book-shelf em, .logo-wrap .book-shelf i, .logo-wrap .book-shelf span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.logo-wrap .book-shelf i {
+    line-height: 38px;
+    overflow: hidden;
+    /*width: 56px;*/
+    height: 38px;
+    margin-right: 3px
+}
+
+.logo-wrap .book-shelf a {
+    font: 14px/1 Arial, '-apple-system', Simsun;
+    display: block;
+    width: 118px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid #e6e6e6
+}
+
+.logo-wrap .book-shelf a:hover {
+    color: #fff;
+    border: 1px solid #ed4259;
+    background: #ed4259
+}
+
+.logo-wrap .book-shelf a:hover span {
+    color: #ed4259;
+    background: #fff
+}
+
+.logo-wrap .book-shelf em {
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 16px;
+    margin-right: 5px
+}

@@ -16,11 +16,15 @@ class CreateStoriesTable extends Migration
         Schema::create('stories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('chinaName');
+            $table->string('chinaLink');
             $table->string('avatar');
             $table->string('author');
+            $table->string('type');
             $table->string('category');
             $table->string('description');
             $table->mediumInteger('status')->default(2);
+            $table->string('introduce');
             $table->string('comment');
             $table->mediumInteger('evaluate');
             $table->timestamps();
