@@ -6,7 +6,7 @@
 
 4.Gửi thư và nhận thư
 
-5.Tìm kiếm truyện và tính view lượt đọc
+5.Tìm kiếm truyện,đọc truyện và tính view lượt đọc
 
 6.Bảng xếp hạng theo:lượt đọc,yêu thích,đề cử,theo dõi
 
